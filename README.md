@@ -9,7 +9,7 @@ The self-host guide for The Loft's audio/visual system at **Edge Esmeralda 2026*
 
 ## What's inside
 
-- `index.html` — the whole runbook, self-contained: signal chains, power ON/OFF order, Yamaha MG12XU channel map, video & recording rig, battery plan, quick troubleshooting, and a "Fork This For Your Venue" section.
+- `index.html` — the whole runbook, self-contained: signal chains, power ON/OFF order, Yamaha MG12XU channel map, video & recording rig, battery plan, quick troubleshooting, a "Run This Runbook With an Agent" section (omni-model: paste the soul + this page into Taurus, Claude, ChatGPT, self-host, or any chat), and a "Fork This For Your Venue" section.
 
 ## Fork it 🍴
 

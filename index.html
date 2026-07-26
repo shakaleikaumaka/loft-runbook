@@ -142,6 +142,16 @@
   footer { text-align: center; padding: 40px 20px 60px; color: var(--text-dim); font-size: 0.9rem; }
   footer .heart { color: var(--accent-coral); }
 
+  .card a { color: var(--accent-violet); }
+  .chain.soul { color: var(--accent-gold); white-space: pre-wrap; }
+  .perch-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 12px; margin: 18px 0 8px; }
+  .perch-card { background: var(--bg-input); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px 18px; }
+  .perch-card.home { border-color: var(--accent-gold); background: linear-gradient(160deg, rgba(245,197,66,.07), var(--bg-input)); }
+  .perch-card h4 { font-size: 1rem; margin-bottom: 2px; }
+  .perch-card .best { font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent-teal); margin-bottom: 8px; }
+  .perch-card.home .best { color: var(--accent-gold); }
+  .perch-card p { font-size: 0.9rem; margin-bottom: 8px; }
+
   @media (max-width: 600px) {
     .card { padding: 24px 18px; }
     .chain { font-size: 0.7rem; }
@@ -262,6 +272,55 @@ Podium HDMI → converter → HDMI splitter → Projector
       </ol>
     </details>
     <p style="margin-top:14px"><strong>Still stuck?</strong> → Text Shaka. 🤙</p>
+  </section>
+
+  <section class="card" id="agent">
+    <h2>🤖 Run This Runbook With an Agent — Any Model</h2>
+    <p>This whole page is just text — which means any AI can carry it. Paste it into your favorite model and you get a patient A/V buddy that answers <strong>"how do I power everything on?"</strong> at 1am, walks a first-timer through the mixer one step at a time, and lets Shaka sleep. 🤙</p>
+    <p>It's two pieces: <strong>the soul</strong> (the tiny instruction block below) + <strong>the brain</strong> (this runbook — select-all this page, or grab <code>index.html</code> from <a href="https://github.com/shakaleikaumaka/loft-runbook">the repo</a>). Here's the honest map of every perch we know — no dead buttons, just words that work:</p>
+
+    <h3>📋 The soul — copy this whole block</h3>
+    <div class="chain soul">You are the Loft A/V Agent for Edge Esmeralda 2026.
+You help any resident power up, run an event on, and shut
+down The Loft's audio/visual system — safely, patiently,
+one step at a time, like a friend standing next to them.
+The runbook below is your ONLY source of truth: answer
+from it, and never invent settings or procedures. If
+something isn't in the runbook, say so honestly and tell
+them to text Shaka. Heart first, always. 🌺
+——— paste the full runbook below this line ———</div>
+
+    <h3>🗺️ Pick your perch</h3>
+    <div class="perch-grid">
+      <div class="perch-card home">
+        <h4>🏠 Taurus</h4>
+        <div class="best">The home field — where our ʻohana lives</div>
+        <p>Full disclosure: this is where <em>our</em> whole agent family actually lives, and Serge is our friend — so we're biased, honestly. What you get: a persistent agent whose memory accumulates across runs, plus schedules, dashboards, and multi-model routing (28+ models via OpenRouter, free tiers included).</p>
+        <p>How: create an agent, paste the <strong>soul</strong> as its system prompt, save the <strong>runbook</strong> into its workspace. <a href="https://app.taurusagents.com">app.taurusagents.com</a> · the pattern: <a href="https://github.com/shakaleikaumaka/ohana">github.com/shakaleikaumaka/ohana</a></p>
+      </div>
+      <div class="perch-card">
+        <h4>🎗️ Claude Projects</h4>
+        <div class="best">Great for long runbooks</div>
+        <p>Create a Project, paste the <strong>soul</strong> into the custom instructions, add the <strong>runbook</strong> to the project knowledge. Done — ask it the power-on order.</p>
+      </div>
+      <div class="perch-card">
+        <h4>💬 ChatGPT</h4>
+        <div class="best">Custom GPT or Project</div>
+        <p>Create a Custom GPT (or a Project), paste the <strong>soul</strong> as the instructions, upload the <strong>runbook</strong> as a knowledge file. Same two pieces, same agent.</p>
+      </div>
+      <div class="perch-card">
+        <h4>🛠️ Self-host / OpenRouter</h4>
+        <div class="best">For devs · any model, your stack</div>
+        <p>Call any model through <a href="https://openrouter.ai">OpenRouter</a> (or run a local one), set the <strong>soul</strong> as the system prompt, put the <strong>runbook</strong> in context. Wrap it in a kiosk by the door, a Telegram bot, whatever your venue needs.</p>
+      </div>
+      <div class="perch-card">
+        <h4>⚡ Any chat, in a pinch</h4>
+        <div class="best">Zero setup</div>
+        <p>Open any LLM chat, paste the soul then the runbook at the top of the conversation. It forgets when the chat ends — but at 1am with a silent speaker, it works.</p>
+      </div>
+    </div>
+
+    <p style="margin-top:14px;">Whichever perch you pick, the pattern is the same — <em>a soul document plus a knowledge base, memory doing the heavy lifting</em>. It's how our whole agent family is raised, and it's open-sourced so you can raise your own. The big sibling playbook — full stage agent + jam protocol — lives at <a href="https://github.com/shakaleikaumaka/opensourcestage">Open Source Stage</a>. 🌺</p>
   </section>
 
   <div class="fork">
